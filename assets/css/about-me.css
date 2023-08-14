@@ -1,0 +1,25 @@
+.about-me-wrapper-bg {
+  background-color: var(--bg-secondary);
+}
+.about-me-wrapper {
+  padding: 2rem 1rem;
+}
+.three-reasons-heading {
+  padding-top: 1.5rem;
+}
+.three-reasons-icon,
+.interests-icon {
+  color: var(--color-orange-dark);
+  margin-right: 0.5rem;
+}
+.interests-title {
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+.interests-heading {
+  margin-bottom: 0;
+  margin-top: 1.5rem;
+  padding-bottom: 0;
+}

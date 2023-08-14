@@ -1,0 +1,132 @@
+.github-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: var(--bg-secondary);
+  min-height: 350px;
+}
+#gh-username {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  background-color: var(--bg-secondary);
+  margin-top: 0.5rem;
+  padding: 0.3rem;
+}
+#gh-username:focus {
+  outline: 1px solid var(--text-primary);
+}
+#gh-user-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+.gh-avatar {
+  margin: 1rem 0;
+}
+.github-repos {
+  margin: 0;
+}
+.repo-list ul {
+  width: 80vw;
+  font-size: 1.2em;
+  display: flex;
+  flex-wrap: wrap;
+}
+.repo-list ul li {
+  display: block;
+}
+.repo-list ul li a {
+  font-weight: bold;
+  padding: 6px 9px;
+  display: block;
+  margin-right: 0.8rem;
+  margin-bottom: 0.8rem;
+  text-decoration: none;
+  border: 1px solid var(--text-primary);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(var(--bg-secondary)),
+    to(var(--bg-primary))
+  );
+  background-image: -webkit-linear-gradient(
+    top,
+    var(--bg-secondary),
+    var(--bg-primary)
+  );
+  background-image: -moz-linear-gradient(
+    top,
+    var(--bg-secondary),
+    var(--bg-primary)
+  );
+  background-image: -ms-linear-gradient(
+    top,
+    var(--bg-secondary),
+    var(--bg-primary)
+  );
+  background-image: -o-linear-gradient(
+    top,
+    var(--bg-secondary),
+    var(--bg-primary)
+  );
+  background-image: linear-gradient(
+    to top,
+    var(--bg-secondary),
+    var(--bg-primary)
+  );
+}
+.repo-list ul li a:hover {
+  color: var(--text-secondary);
+  background-color: var(--bg-primary);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(var(--bg-primary)),
+    to(var(--bg-secondary))
+  );
+  background-image: -webkit-linear-gradient(
+    top,
+    var(--bg-primary),
+    var(--bg-secondary)
+  );
+  background-image: -moz-linear-gradient(
+    top,
+    var(--bg-primary),
+    var(--bg-secondary)
+  );
+  background-image: -ms-linear-gradient(
+    top,
+    var(--bg-primary),
+    var(--bg-secondary)
+  );
+  background-image: -o-linear-gradient(
+    top,
+    var(--bg-primary),
+    var(--bg-secondary)
+  );
+  background-image: linear-gradient(
+    to top,
+    var(--bg-primary),
+    var(--bg-secondary)
+  );
+}
+.repo-list ul li a:active {
+  color: var(--text-secondary);
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.25);
+}
+.repo-list ul li a span {
+  font-size: 0.9em;
+}

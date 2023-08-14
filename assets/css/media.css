@@ -1,0 +1,176 @@
+/* Small screens */
+
+@media only screen and (max-width: 600px) {
+  main {
+    margin: 0;
+    margin-bottom: 6rem;
+  }
+
+  /* NAVBAR */
+
+  .navbar {
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
+    overflow-y: hidden;
+  }
+  .logo {
+    display: none;
+  }
+  .navbar-nav {
+    flex-direction: row;
+  }
+  .nav-link {
+    justify-content: center;
+    margin: 0;
+  }
+
+  /* ABOUT ME */
+
+  .three-reasons-wrapper {
+    padding-bottom: 1.5rem;
+  }
+  .interests-wrapper {
+    border-top: 1px solid var(--text-primary);
+    padding-top: 1.5rem;
+  }
+  .resume-wrapper,
+  .skills-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .education-wrapper,
+  .work-wrapper,
+  .frontend-wrapper,
+  .backend-wrapper {
+    width: 90%;
+    margin: 2rem auto;
+  }
+  .education-heading,
+  .work-heading,
+  .frontend-heading,
+  .backend-heading {
+    text-align: center;
+  }
+  .frontend-skills-wrapper,
+  .backend-skills-wrapper {
+    justify-content: center;
+    align-items: center;
+  }
+  p.__lang__political-science-content,
+  p.__lang__philosophy-content {
+    text-align: right;
+  }
+
+  /* CERTIFICATES */
+
+  .certificates-wrapper {
+    right: -26px;
+  }
+
+  /* CONTACT */
+
+  #contact-form input,
+  #contact-form textarea {
+    width: 80vw;
+  }
+}
+
+/* Large screens */
+
+@media only screen and (min-width: 600px) {
+  main {
+    margin: 0;
+    padding: 0;
+  }
+  .my-names,
+  .my-title {
+    margin-left: 7rem;
+  }
+  .my-names {
+    margin-top: 3rem;
+  }
+
+  /* NAVBAR */
+
+  .navbar {
+    top: 0;
+    width: 5rem;
+    height: 100vh;
+  }
+  .navbar:hover {
+    width: 16rem;
+  }
+  .navbar:hover .link-text {
+    display: inline;
+  }
+  .navbar:hover .logo svg {
+    margin-left: 11rem;
+  }
+  .logo-text img {
+    width: 45px;
+    height: 45px;
+    border: 1px solid var(--color-orange-dark);
+    border-radius: 50%;
+  }
+  .navbar:hover .logo-text {
+    left: 0px;
+  }
+
+  /* ABOUT ME */
+
+  .about-me-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .three-reasons-wrapper {
+    width: 55%;
+  }
+  .interests-wrapper {
+    width: 45%;
+    padding-left: 1.5rem;
+  }
+
+  .education-wrapper,
+  .work-wrapper,
+  .frontend-wrapper,
+  .backend-wrapper {
+    width: 45%;
+  }
+
+  .education-heading,
+  .frontend-heading {
+    text-align: right;
+  }
+
+  .work-heading,
+  .backend-heading {
+    text-align: left;
+  }
+
+  /* SKILLS */
+
+  .frontend-skills-wrapper {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  /* CONTACT */
+
+  #contact-form input,
+  #contact-form textarea {
+    width: 50vw;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    padding: 0.3rem;
+    border: 1px solid var(--text-primary);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+  }
+}

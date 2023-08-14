@@ -1,0 +1,47 @@
+.certificates-wrapper {
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  min-height: 200px;
+  position: relative;
+}
+.cert-link-wrapper {
+  position: absolute;
+}
+.cert-link {
+  text-decoration: none;
+}
+.cert-link:link {
+  text-decoration: none;
+}
+.cert-link:hover {
+  text-decoration: none;
+}
+.cert-link:active {
+  text-decoration: none;
+}
+.cert-link:visited {
+  text-decoration: none;
+}
+img.cert-icon {
+  margin-bottom: 6px;
+  position: relative;
+  height: 80px;
+  width: auto;
+  opacity: 0.4;
+}
+img.cert-icon-logo {
+  margin-bottom: 6px;
+  position: relative;
+  top: -20px;
+  right: 67px;
+}
+.tooltip .tooltip-text-cert {
+  top: 85px;
+  left: -22px;
+  width: 95px;
+  z-index: 10;
+}

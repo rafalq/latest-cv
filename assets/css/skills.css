@@ -1,0 +1,25 @@
+.skills-wrapper {
+  background-color: var(--bg-secondary);
+  padding: 4rem;
+}
+.skills-icon {
+  text-align: center;
+  font-size: 2.5rem;
+  cursor: pointer;
+  margin-bottom: 6px;
+  width: auto;
+  height: 40px;
+}
+.skills-icon:hover {
+  color: var(--color-orange-dark);
+}
+.frontend-skills-wrapper,
+.backend-skills-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.frontend-heading,
+.backend-heading {
+  margin-bottom: 2.5rem;
+}
