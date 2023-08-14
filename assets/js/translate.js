@@ -409,6 +409,10 @@ const toTranslate = [
 const defaultLang = 'pl';
 const secondLang = 'eng';
 
+const cvLink = document.getElementById('nav-link-cv');
+const defaultLangCV = `assets/cv/cv-${defaultLang}.pdf`;
+const secondLangCV = `assets/cv/cv-${secondLang}.pdf`;
+
 if (!localStorage.getItem('lang')) {
   localStorage.setItem('lang', defaultLang);
 }
@@ -440,10 +444,12 @@ function changeLang(localStorageKey, defaultLang, secondLang) {
   const secondLangObjKey = `text${secondLang.toUpperCase()}`;
 
   if (lang === secondLang) {
+    cvLink.setAttribute('href', secondLangCV);
     toTranslate.forEach(
       (item) => (item.el.textContent = item[secondLangObjKey])
     );
   } else if (lang === defaultLang) {
+    cvLink.setAttribute('href', defaultLangCV);
     toTranslate.forEach((item) => {
       item.el.textContent = item[defaultLangObjKey];
     });
