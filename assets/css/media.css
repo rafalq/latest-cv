@@ -12,7 +12,7 @@
     bottom: 0;
     width: 100vw;
     height: 5rem;
-    overflow-y: hidden;
+    overflow-y: hidden !important;
   }
   .navbar-nav {
     flex-direction: row;
@@ -26,14 +26,12 @@
     margin: 0;
   }
   /* switch */
-  .tooltip-switch.tooltip-switch-sm {
-    top: 30px;
-    right: 40px;
+  .tooltip.tooltip-switch {
+    top: 35px;
+    right: 42px;
   }
-  .tooltip-text-switch-sm {
-    display: none;
-    top: 10px;
-    right: 10px;
+  .tooltip-text-switch {
+    display: none !important;
   }
   /* about-me */
   .three-reasons-wrapper {
@@ -65,7 +63,7 @@
     align-items: center;
   }
   /*certificate*/
-  .tooltip-text-cert-sm {
+  .tooltip-text-cert {
     visibility: visible !important;
     border: 0 !important;
     margin-top: 0.5rem;
@@ -123,6 +121,15 @@
   }
   .navbar-nav {
     flex-direction: column;
+  }
+  /* switch */
+  .tooltip-switch {
+    top: 20px;
+    right: 25px;
+  }
+  .tooltip-text-switch {
+    top: 45px;
+    right: 0px;
   }
   /* about-me */
   .about-me-wrapper {
