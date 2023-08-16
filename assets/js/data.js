@@ -179,7 +179,7 @@ const data = [
   },
   {
     pl: 'Jestem Programistą Full Stack z różnorodnymi zainteresowaniami i wielkim entuzjazmem, który wnoszę do każdego projektu.',
-    en: "I'm a Full Stack Web Developer with diverse interests and great enthusiasm that I bring to every project.",
+    en: 'I am a Full Stack Web Developer with diverse interests and great enthusiasm that I bring to every project.',
   },
   {
     pl: 'Co robię?',
