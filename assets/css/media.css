@@ -53,7 +53,9 @@
   }
 
   /* contact */
-
+  .contact-wrapper {
+    padding-bottom: 3rem;
+  }
   #contact-form input,
   #contact-form textarea {
     width: 80vw;

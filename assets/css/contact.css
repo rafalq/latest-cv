@@ -29,6 +29,7 @@
   outline: 1px solid var(--text-primary);
 }
 #contact-form button {
+  align-self: flex-end;
   font-size: 1.1rem;
   font-weight: 600;
   margin-top: 0.8rem;

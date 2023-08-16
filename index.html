@@ -777,49 +777,47 @@
         <h2 id="contact" class="section-heading">
           <lang>Contact</lang>
         </h2>
-        <div class="contact-wrapper-bg">
-          <div class="contact-wrapper">
-            <h3 style="text-align: center">
-              <lang>Got a project in mind?</lang>
-            </h3>
-            <h4><lang>Let's work together!</lang></h4>
-            <form
-              id="contact-form"
-              action="https://formsubmit.co/kruszewskirafael@gmail.com"
-              method="POST"
+        <div class="contact-wrapper">
+          <h3 style="text-align: center">
+            <lang>Got a project in mind?</lang>
+          </h3>
+          <h4><lang>Let's work together!</lang></h4>
+          <form
+            id="contact-form"
+            action="https://formsubmit.co/kruszewskirafael@gmail.com"
+            method="POST"
+          >
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              required
+            />
+            <textarea
+              rows="8"
+              name="message"
+              id="message"
+              placeholder="Project description"
+              required
             >
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Name"
-                required
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="Email Address"
-                required
-              />
-              <textarea
-                rows="8"
-                name="message"
-                id="message"
-                placeholder="Project description"
-                required
-              >
-              </textarea>
-              <input
-                type="hidden"
-                name="_autoresponse"
-                value="Thank you for your email. I will contact you soon."
-              />
-              <input type="hidden" name="_template" value="box" />
-              <button type="submit">
-                <lang>Send Project Request</lang>
-              </button>
-            </form>
-          </div>
+            </textarea>
+            <input
+              type="hidden"
+              name="_autoresponse"
+              value="Thank you for your email. I will contact you soon."
+            />
+            <input type="hidden" name="_template" value="box" />
+            <button type="submit">
+              <lang>Send Project Request</lang>
+            </button>
+          </form>
         </div>
       </section>
       <!-- end CONTACT SECTION -->
