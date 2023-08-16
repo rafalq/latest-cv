@@ -42,6 +42,10 @@ img.cert-icon-logo {
   right: 40px;
 }
 .tooltip .tooltip-text-cert {
-  width: 100px;
-  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95px;
+  height: 45px;
+  margin-top: 0.5rem;
 }
