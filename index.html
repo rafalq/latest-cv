@@ -9,15 +9,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/navbar.css" />
-    <link rel="stylesheet" href="assets/css/about-me.css" />
-    <link rel="stylesheet" href="assets/css/resume.css" />
-    <link rel="stylesheet" href="assets/css/skills.css" />
-    <link rel="stylesheet" href="assets/css/certificates.css" />
-    <link rel="stylesheet" href="assets/css/github.css" />
-    <link rel="stylesheet" href="assets/css/contact.css" />
-    <link rel="stylesheet" href="assets/css/themes.css" />
-    <link rel="stylesheet" href="assets/css/media.css" />
 
     <script
       defer
@@ -30,23 +21,7 @@
     <script defer src="assets/js/translate.js"></script>
   </head>
   <body>
-    <div
-      class="tooltip"
-      style="position: fixed; top: 30px; right: 42px; z-index: 1000"
-    >
-      <label class="switch">
-        <p class="language default-lang">PL</p>
-        <div>
-          <input data-lang="eng" type="checkbox" class="translate-button" />
-          <span class="slider round"></span>
-        </div>
-        <p class="language second-lang">EN</p>
-      </label>
-      <span class="tooltiptext" style="position: relative; top: 50px"
-        ><lang>Przetłumacz na polski</lang></span
-      >
-    </div>
-    <nav class="navbar" ss-container>
+    <nav class="navbar">
       <ul class="navbar-nav">
         <li class="logo">
           <a href="#" class="nav-link">
@@ -304,19 +279,35 @@
     </nav>
 
     <main>
-      <div class="main-header">
+      <section class="main-header">
+        <div
+          class="tooltip"
+          style="position: fixed; top: 20px; right: 25px; z-index: 1000"
+        >
+          <label class="switch">
+            <p class="language default-lang">PL</p>
+            <div>
+              <input data-lang="eng" type="checkbox" class="translate-button" />
+              <span class="slider round"></span>
+            </div>
+            <p class="language second-lang">EN</p>
+          </label>
+          <span class="tooltiptext" style="position: relative; top: 50px"
+            ><lang>Przetłumacz na polski</lang></span
+          >
+        </div>
         <div>
           <h2 class="my-names"><lang>Rafal Kruszewski</lang></h2>
           <h1 class="my-title"><lang>Full Stack Web Developer</lang></h1>
         </div>
-      </div>
+      </section>
       <!-- ABOUT ME -->
-      <h2 id="about-me" class="section-heading">
-        <lang>About Me</lang>
-      </h2>
-      <div class="about-me-wrapper-bg">
+      <section>
+        <h2 id="about-me" class="section-heading">
+          <lang>About Me</lang>
+        </h2>
         <div class="about-me-wrapper">
-          <section class="three-reasons-wrapper">
+          <div class="three-reasons-wrapper">
             <h4 class="interests-heading">
               <i
                 class="three-reasons-icon fa fa-question"
@@ -352,8 +343,8 @@
                 starter when working solo.</lang
               >
             </p>
-          </section>
-          <section class="interests-wrapper">
+          </div>
+          <div class="interests-wrapper">
             <h4 class="interests-title"><lang>Interests</lang></h4>
             <h5 class="interests-heading">
               <i class="interests-icon fas fa-book-open" aria-hidden="true"></i>
@@ -392,447 +383,445 @@
             <p>
               <lang>From martial arts to kettlebells.</lang>
             </p>
-          </section>
+          </div>
         </div>
-      </div>
+      </section>
       <!-- end ABOUT ME -->
 
       <!-- RESUME	-->
-      <h2 id="resume" class="section-heading">
-        <lang>Resume</lang>
-      </h2>
-      <div class="resume-wrapper">
-        <section class="education-wrapper">
-          <h3 class="education-heading">
-            <span><lang>Education</lang></span>
-            <i
-              class="heading-icon fas fa-graduation-cap"
-              aria-hidden="true"
-            ></i>
-          </h3>
-          <div
-            class="timeline-item timeline-item__education"
-            data-dates="10/1999 - 06/2001"
-          >
-            <h4><lang>Political Science</lang></h4>
-            <p style="text-align: right">
-              <lang>Pawel Wlodkowic College, Poland</lang>
-            </p>
-          </div>
-          <div
-            class="timeline-item timeline-item__education"
-            data-dates="10/2002 - 06/2005"
-          >
-            <h4><lang>Philosophy</lang></h4>
-            <p style="text-align: right">
-              <lang>Poznan University, Poland</lang>
-            </p>
-          </div>
-          <div
-            class="timeline-item timeline-item__education"
-            data-dates="12/2018 - 03/2019"
-          >
-            <h4><lang>Java Associate Developer SE 8</lang></h4>
-            <p>
-              <span><lang>ecollege, Ireland</lang></span>
+      <section style="margin-bottom: 3rem">
+        <h2 id="resume" class="section-heading">
+          <lang>Resume</lang>
+        </h2>
+        <div class="resume-wrapper">
+          <div class="education-wrapper">
+            <h3 class="subsection-heading education-heading">
+              <span><lang>Education</lang></span>
               <i
-                class="fas fa-award"
-                data-toggle="tooltip"
-                data-placement="right"
-                title="Certified"
+                class="heading-icon fas fa-graduation-cap"
+                aria-hidden="true"
               ></i>
-            </p>
+            </h3>
+            <div
+              class="timeline-item timeline-item__education"
+              data-dates="10/1999 - 06/2001"
+            >
+              <h4><lang>Political Science</lang></h4>
+              <p style="text-align: right">
+                <lang>Pawel Wlodkowic College, Poland</lang>
+              </p>
+            </div>
+            <div
+              class="timeline-item timeline-item__education"
+              data-dates="10/2002 - 06/2005"
+            >
+              <h4><lang>Philosophy</lang></h4>
+              <p style="text-align: right">
+                <lang>Poznan University, Poland</lang>
+              </p>
+            </div>
+            <div
+              class="timeline-item timeline-item__education"
+              data-dates="12/2018 - 03/2019"
+            >
+              <h4><lang>Java Associate Developer SE 8</lang></h4>
+              <p>
+                <span><lang>ecollege, Ireland</lang></span>
+                <i
+                  class="fas fa-award"
+                  data-toggle="tooltip"
+                  data-placement="right"
+                  title="Certified"
+                ></i>
+              </p>
+            </div>
+            <div
+              class="timeline-item timeline-item__education"
+              data-dates="02/2019 - 02/2020"
+            >
+              <h4><lang>Full Stack Web Developer</lang></h4>
+              <p>
+                <span><lang>Code Institute, Ireland</lang></span>
+                <i
+                  class="fas fa-award"
+                  data-toggle="tooltip"
+                  data-placement="right"
+                  title="Certified"
+                ></i>
+              </p>
+            </div>
+            <div
+              class="timeline-item timeline-item__education"
+              data-dates="02/2020 - Present"
+            >
+              <h4><lang>Frontend | Backend | Linux | Github</lang></h4>
+              <p>
+                <lang>Udemy, online</lang>
+                <i
+                  class="fas fa-award"
+                  data-toggle="tooltip"
+                  data-placement="right"
+                  title="Certified"
+                ></i>
+              </p>
+            </div>
           </div>
-          <div
-            class="timeline-item timeline-item__education"
-            data-dates="02/2019 - 02/2020"
-          >
-            <h4><lang>Full Stack Web Developer</lang></h4>
-            <p>
-              <span><lang>Code Institute, Ireland</lang></span>
-              <i
-                class="fas fa-award"
-                data-toggle="tooltip"
-                data-placement="right"
-                title="Certified"
-              ></i>
-            </p>
+          <div class="work-wrapper">
+            <h3 class="work-heading subsection-heading">
+              <i class="heading-icon fas fa-briefcase"></i>
+              <span><lang>Work History</lang></span>
+            </h3>
+            <div
+              class="timeline-item timeline-item__work"
+              data-dates="1995 - 1999"
+            >
+              <h4><lang>Radio Boss, Poland</lang></h4>
+              <p><lang>Radio Journalist Assistant</lang></p>
+            </div>
+            <div
+              class="timeline-item timeline-item__work"
+              data-dates="08/2007 - 10/2017"
+            >
+              <h4>
+                <lang>Medtronic CardioVascular, Galway, Ireland</lang>
+              </h4>
+              <p><lang>General Operative</lang></p>
+            </div>
           </div>
-          <div
-            class="timeline-item timeline-item__education"
-            data-dates="02/2020 - Present"
-          >
-            <h4><lang>Frontend | Backend | Linux | Github</lang></h4>
-            <p>
-              <lang>Udemy, online</lang>
-              <i
-                class="fas fa-award"
-                data-toggle="tooltip"
-                data-placement="right"
-                title="Certified"
-              ></i>
-            </p>
-          </div>
-        </section>
-        <section class="work-wrapper">
-          <h3 class="work-heading">
-            <i class="heading-icon fas fa-briefcase"></i>
-            <span><lang>Work History</lang></span>
-          </h3>
-          <div
-            class="timeline-item timeline-item__work"
-            data-dates="1995 - 1999"
-          >
-            <h4><lang>Radio Boss, Poland</lang></h4>
-            <p><lang>Radio Journalist Assistant</lang></p>
-          </div>
-          <div
-            class="timeline-item timeline-item__work"
-            data-dates="08/2007 - 10/2017"
-          >
-            <h4>
-              <lang>Medtronic CardioVascular, Galway, Ireland</lang>
-            </h4>
-            <p><lang>General Operative</lang></p>
-          </div>
-        </section>
-      </div>
+        </div>
+      </section>
       <!-- end RESUME -->
 
       <!-- SKILLS	-->
-      <h2 id="skills" class="section-heading">
-        <lang>Skills</lang>
-      </h2>
-      <div class="skills-wrapper">
-        <section class="frontend-wrapper">
-          <h4 class="frontend-heading">
-            FRONTEND<i class="heading-icon fa fa-tv"></i>
-          </h4>
-          <div class="frontend-skills-wrapper">
-            <div class="tooltip">
-              <img
-                alt="HTML5 Logo"
-                src="assets/images/html.png"
-                decoding="async"
-                class="skills-icon frontend-icon"
-              />
-              <span class="tooltiptext">HTML</span>
-            </div>
+      <section>
+        <h2 id="skills" class="section-heading">
+          <lang>Skills</lang>
+        </h2>
+        <div class="skills-wrapper">
+          <div class="frontend-wrapper">
+            <h4 class="subsection-heading">
+              FRONTEND<i class="heading-icon fa fa-tv"></i>
+            </h4>
+            <div class="frontend-skills-wrapper">
+              <div class="tooltip">
+                <img
+                  alt="HTML5 Logo"
+                  src="assets/images/html.png"
+                  decoding="async"
+                  class="skills-icon frontend-icon"
+                />
+                <span class="tooltiptext">HTML</span>
+              </div>
 
-            <div class="tooltip">
-              <img
-                alt="CSS Logo"
-                src="assets/images/css.png"
-                decoding="async"
-                class="skills-icon frontend-icon"
-              />
-              <span class="tooltiptext">CSS</span>
-            </div>
-            <div class="tooltip">
-              <img
-                alt="Javascript Logo"
-                src="assets/images/js.png"
-                decoding="async"
-                class="skills-icon frontend-icon"
-              />
-              <span class="tooltiptext">JAVASCRIPT</span>
-            </div>
-            <div class="tooltip">
-              <img
-                alt="Typescript Logo"
-                src="assets/images/ts.png"
-                decoding="async"
-                class="skills-icon frontend-icon"
-              />
-              <span class="tooltiptext">TYPESCRIPT</span>
-            </div>
-            <div class="tooltip">
-              <img
-                alt="Vue js Logo"
-                src="assets/images/vue.png"
-                decoding="async"
-                class="skills-icon frontend-icon"
-              />
-              <span class="tooltiptext">VUE</span>
-            </div>
-            <div class="tooltip">
-              <img
-                alt="React Logo"
-                src="assets/images/react.png"
-                decoding="async"
-                class="skills-icon frontend-icon"
-              />
-              <span class="tooltiptext">REACT</span>
-            </div>
-          </div>
-        </section>
-        <section class="backend-wrapper">
-          <h4 class="backend-heading">
-            <i class="heading-icon fas fa-cog"></i>
-            BACKEND
-          </h4>
-          <div class="backend-skills-wrapper">
-            <div class="tooltip">
-              <img
-                alt="Node js Logo"
-                src="assets/images/nodejs.png"
-                decoding="async"
-                class="skills-icon"
-              />
-              <span class="tooltiptext">NODE JS</span>
-            </div>
-            <div class="tooltip">
-              <img
-                alt="PHP Logo"
-                src="assets/images/php.png"
-                decoding="async"
-                class="skills-icon"
-              />
-              <span class="tooltiptext">PHP</span>
-            </div>
-            <div class="tooltip">
-              <img
-                alt="Python"
-                src="assets/images/python.png"
-                decoding="async"
-                class="skills-icon"
-              />
-              <span class="tooltiptext">PYTHON</span>
-            </div>
-            <div class="tooltip">
-              <img
-                alt="MySql Logo"
-                src="assets/images/mysql.png"
-                decoding="async"
-                class="skills-icon"
-              />
-              <span class="tooltiptext">MySql</span>
-            </div>
-            <div class="tooltip">
-              <img
-                alt="mongoDB Logo"
-                src="assets/images/mongodb.png"
-                decoding="async"
-                class="skills-icon"
-              />
-              <span class="tooltiptext">mongoDB</span>
+              <div class="tooltip">
+                <img
+                  alt="CSS Logo"
+                  src="assets/images/css.png"
+                  decoding="async"
+                  class="skills-icon frontend-icon"
+                />
+                <span class="tooltiptext">CSS</span>
+              </div>
+              <div class="tooltip">
+                <img
+                  alt="Javascript Logo"
+                  src="assets/images/js.png"
+                  decoding="async"
+                  class="skills-icon frontend-icon"
+                />
+                <span class="tooltiptext">JAVASCRIPT</span>
+              </div>
+              <div class="tooltip">
+                <img
+                  alt="Typescript Logo"
+                  src="assets/images/ts.png"
+                  decoding="async"
+                  class="skills-icon frontend-icon"
+                />
+                <span class="tooltiptext">TYPESCRIPT</span>
+              </div>
+              <div class="tooltip">
+                <img
+                  alt="Vue js Logo"
+                  src="assets/images/vue.png"
+                  decoding="async"
+                  class="skills-icon frontend-icon"
+                />
+                <span class="tooltiptext">VUE</span>
+              </div>
+              <div class="tooltip">
+                <img
+                  alt="React Logo"
+                  src="assets/images/react.png"
+                  decoding="async"
+                  class="skills-icon frontend-icon"
+                />
+                <span class="tooltiptext">REACT</span>
+              </div>
             </div>
           </div>
-        </section>
-      </div>
+          <div class="backend-wrapper">
+            <h4 class="subsection-heading">
+              <i class="heading-icon fas fa-cog"></i>
+              BACKEND
+            </h4>
+            <div class="backend-skills-wrapper">
+              <div class="tooltip">
+                <img
+                  alt="Node js Logo"
+                  src="assets/images/nodejs.png"
+                  decoding="async"
+                  class="skills-icon"
+                />
+                <span class="tooltiptext">NODE JS</span>
+              </div>
+              <div class="tooltip">
+                <img
+                  alt="PHP Logo"
+                  src="assets/images/php.png"
+                  decoding="async"
+                  class="skills-icon"
+                />
+                <span class="tooltiptext">PHP</span>
+              </div>
+              <div class="tooltip">
+                <img
+                  alt="Python"
+                  src="assets/images/python.png"
+                  decoding="async"
+                  class="skills-icon"
+                />
+                <span class="tooltiptext">PYTHON</span>
+              </div>
+              <div class="tooltip">
+                <img
+                  alt="MySql Logo"
+                  src="assets/images/mysql.png"
+                  decoding="async"
+                  class="skills-icon"
+                />
+                <span class="tooltiptext">MySql</span>
+              </div>
+              <div class="tooltip">
+                <img
+                  alt="mongoDB Logo"
+                  src="assets/images/mongodb.png"
+                  decoding="async"
+                  class="skills-icon"
+                />
+                <span class="tooltiptext">mongoDB</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- end SKILLS SECTION-->
-      <!-- CERTIFICATES SECTION -->
-      <h2 id="certificates" class="section-heading">
-        <lang>Certificates</lang>
-      </h2>
-      <section class="certificates-wrapper">
-        <a
-          href="assets/certs/certificate-of-completion-for-modern-react-and-redux.pdf"
-          class="cert-link"
-        >
-          <div class="tooltip">
-            <div class="cert-link-wrapper">
-              <img src="./assets/images/certificate.svg" class="cert-icon" />
-              <img
-                alt="React Logo"
-                src="assets/images/react.png"
-                decoding="async"
-                class="skills-icon frontend-icon cert-icon-logo"
-                style="left: -65px; top: -20px"
-              />
+
+      <!-- CATES SECTION -->
+      <section class="certificates-section">
+        <h2 id="certificates" class="section-heading">
+          <lang>Certificates</lang>
+        </h2>
+        <div class="certificates-wrapper">
+          <a
+            href="assets/certs/certificate-of-completion-for-modern-react-and-redux.pdf"
+            class="cert-link"
+          >
+            <div class="tooltip">
+              <div class="cert-link-wrapper">
+                <img src="./assets/images/certificate.svg" class="cert-icon" />
+                <img
+                  alt="React Logo"
+                  src="assets/images/react.png"
+                  decoding="async"
+                  class="cert-icon-logo"
+                />
+              </div>
+              <span class="tooltiptext tooltip-text-cert"
+                ><lang>Modern React and Redux</lang></span
+              >
             </div>
-            <span class="tooltiptext tooltip-text-cert"
-              ><lang>Modern React and Redux</lang></span
-            >
-          </div>
-        </a>
-        <a
-          href="assets/certs/certificate-of-completion-for-go-for-beginners-crash-course.pdf"
-          class="cert-link"
-        >
-          <div class="tooltip">
-            <div class="cert-link-wrapper">
-              <img src="./assets/images/certificate.svg" class="cert-icon" />
-              <img
-                alt="Golang Logo"
-                src="assets/images/golang.png"
-                decoding="async"
-                class="skills-icon frontend-icon cert-icon-logo"
-                style="top: -37px; height: 25px"
-              />
+          </a>
+          <a
+            href="assets/certs/certificate-of-completion-for-go-for-beginners-crash-course.pdf"
+            class="cert-link"
+          >
+            <div class="tooltip">
+              <div class="cert-link-wrapper">
+                <img src="./assets/images/certificate.svg" class="cert-icon" />
+                <img
+                  alt="Golang Logo"
+                  src="assets/images/go.png"
+                  decoding="async"
+                  class="cert-icon-logo"
+                />
+              </div>
+              <span class="tooltiptext tooltip-text-cert"
+                ><lang>Golang for Beginners</lang></span
+              >
             </div>
-            <span class="tooltiptext tooltip-text-cert"
-              ><lang>Golang for Beginners</lang></span
-            >
-          </div>
-        </a>
-        <a
-          href="assets/certs/certificate-of-completion-for-golang-the-practical-guide.pdf"
-          class="cert-link"
-        >
-          <div class="tooltip">
-            <div class="cert-link-wrapper">
-              <img src="./assets/images/certificate.svg" class="cert-icon" />
-              <img
-                alt="Golang Logo"
-                src="assets/images/golang.png"
-                decoding="async"
-                height="auto"
-                width="45px"
-                class="skills-icon frontend-icon cert-icon-logo"
-                style="top: -37px; height: 25px"
-              />
+          </a>
+          <a
+            href="assets/certs/certificate-of-completion-for-golang-the-practical-guide.pdf"
+            class="cert-link"
+          >
+            <div class="tooltip">
+              <div class="cert-link-wrapper">
+                <img src="./assets/images/certificate.svg" class="cert-icon" />
+                <img
+                  alt="Golang Logo"
+                  src="assets/images/go.png"
+                  decoding="async"
+                  class="cert-icon-logo"
+                />
+              </div>
+              <span class="tooltiptext tooltip-text-cert"
+                ><lang>Golang The Practical Guide</lang></span
+              >
             </div>
-            <span class="tooltiptext tooltip-text-cert"
-              ><lang>Golang The Practical Guide</lang></span
-            >
-          </div>
-        </a>
-        <a
-          href="assets/certs/certificate-of-completion-for-ultimate-mysql-bootcamp.pdf"
-          class="cert-link"
-        >
-          <div class="tooltip">
-            <div class="cert-link-wrapper">
-              <img src="./assets/images/certificate.svg" class="cert-icon" />
-              <img
-                alt="MySql Logo"
-                src="assets/images/mysql.png"
-                decoding="async"
-                height="auto"
-                width="45px"
-                class="skills-icon frontend-icon cert-icon-logo"
-                style="top: -30px"
-              />
+          </a>
+          <a
+            href="assets/certs/certificate-of-completion-for-ultimate-mysql-bootcamp.pdf"
+            class="cert-link"
+          >
+            <div class="tooltip">
+              <div class="cert-link-wrapper">
+                <img src="./assets/images/certificate.svg" class="cert-icon" />
+                <img
+                  alt="MySql Logo"
+                  src="assets/images/mysql.png"
+                  decoding="async"
+                  class="cert-icon-logo"
+                />
+              </div>
+              <span class="tooltiptext tooltip-text-cert"
+                ><lang>Ultimate MySql Bootcamp</lang></span
+              >
             </div>
-            <span class="tooltiptext tooltip-text-cert"
-              ><lang>Ultimate MySql Bootcamp</lang></span
-            >
-          </div>
-        </a>
-        <a
-          href="assets/certs/certificate-of-participation-in-vuejs-forge.pdf"
-          class="cert-link"
-        >
-          <div class="tooltip">
-            <div class="cert-link-wrapper">
-              <img src="./assets/images/certificate.svg" class="cert-icon" />
-              <img
-                alt="Vue.js Logo"
-                src="assets/images/vue.png"
-                decoding="async"
-                height="auto"
-                width="45px"
-                class="skills-icon frontend-icon cert-icon-logo"
-              />
+          </a>
+          <a
+            href="assets/certs/certificate-of-participation-in-vuejs-forge.pdf"
+            class="cert-link"
+          >
+            <div class="tooltip">
+              <div class="cert-link-wrapper">
+                <img src="./assets/images/certificate.svg" class="cert-icon" />
+                <img
+                  alt="Vue.js Logo"
+                  src="assets/images/vue.png"
+                  decoding="async"
+                  class="cert-icon-logo"
+                />
+              </div>
+              <span class="tooltiptext tooltip-text-cert"
+                ><lang>Vue Forge</lang></span
+              >
             </div>
-            <span class="tooltiptext tooltip-text-cert"
-              ><lang>Vue Forge</lang></span
-            >
-          </div>
-        </a>
-        <a
-          href="assets/certs/java-foundations-score-report.pdf"
-          class="cert-link"
-        >
-          <div class="tooltip">
-            <div class="cert-link-wrapper">
-              <img src="./assets/images/certificate.svg" class="cert-icon" />
-              <img
-                alt="Java Logo"
-                src="assets/images/java.png"
-                decoding="async"
-                class="skills-icon frontend-icon cert-icon-logo"
-                style="height: 60px; left: -73px"
-              />
+          </a>
+          <a
+            href="assets/certs/java-foundations-score-report.pdf"
+            class="cert-link"
+          >
+            <div class="tooltip">
+              <div class="cert-link-wrapper">
+                <img src="./assets/images/certificate.svg" class="cert-icon" />
+                <img
+                  alt="Java Logo"
+                  src="assets/images/java.png"
+                  decoding="async"
+                  class="cert-icon-logo"
+                />
+              </div>
+              <span class="tooltiptext tooltip-text-cert"
+                ><lang>Java Foundations</lang></span
+              >
             </div>
-            <span class="tooltiptext tooltip-text-cert"
-              ><lang>Java Foundations</lang></span
-            >
-          </div>
-        </a>
-        <a
-          href="assets/certs/software-development-diploma.pdf"
-          class="cert-link"
-        >
-          <div class="tooltip">
-            <div class="cert-link-wrapper">
-              <img src="./assets/images/certificate.svg" class="cert-icon" />
-              <img
-                alt="Developer with a laptop image"
-                src="assets/images/dev.png"
-                decoding="async"
-                class="skills-icon frontend-icon cert-icon-logo"
-                style="height: 45px"
-              />
+          </a>
+          <a
+            href="assets/certs/software-development-diploma.pdf"
+            class="cert-link"
+          >
+            <div class="tooltip">
+              <div class="cert-link-wrapper">
+                <img src="./assets/images/certificate.svg" class="cert-icon" />
+                <img
+                  alt="Developer with a laptop image"
+                  src="assets/images/dev.png"
+                  decoding="async"
+                  class="cert-icon-logo"
+                />
+              </div>
+              <span class="tooltiptext tooltip-text-cert"
+                ><lang>Software Developer Diploma</lang></span
+              >
             </div>
-            <span class="tooltiptext tooltip-text-cert"
-              ><lang>Software Developer Diploma</lang></span
-            >
-          </div>
-        </a>
+          </a>
+        </div>
       </section>
       <!-- end CERTIFICATES SECTION -->
       <!-- GITHUB SECTION	 -->
-      <h2 id="github" class="section-heading"><lang>My Github</lang></h2>
-      <div class="github-wrapper">
-        <h4><lang>View My GitHub Projects</lang></h4>
-        <p style="text-align: center">
-          <lang>You can also search on other user profiles </lang>
-        </p>
-        <input type="text" id="gh-username" value="rafalq" />
-        <div id="gh-user-data"></div>
-        <div id="gh-repo-data"></div>
-      </div>
-
-      <!-- CONTACT SECTION -->
-      <h2 id="contact" class="section-heading">
-        <lang>Contact</lang>
-      </h2>
-      <div class="contact-wrapper-bg">
-        <div class="contact-wrapper">
-          <h3 style="text-align: center">
-            <lang>Got a project in mind?</lang>
-          </h3>
-          <h4><lang>Let's work together!</lang></h4>
-          <form
-            id="contact-form"
-            action="https://formsubmit.co/kruszewskirafael@gmail.com"
-            method="POST"
-          >
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Name"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Email Address"
-              required
-            />
-            <textarea
-              rows="8"
-              name="message"
-              id="message"
-              placeholder="Project description"
-              required
-            >
-            </textarea>
-            <input
-              type="hidden"
-              name="_autoresponse"
-              value="Thank you for your email. I will contact you soon."
-            />
-            <input type="hidden" name="_template" value="box" />
-            <button type="submit">
-              <lang>Send Project Request</lang>
-            </button>
-          </form>
+      <section>
+        <h2 id="github" class="section-heading"><lang>My Github</lang></h2>
+        <div class="github-wrapper">
+          <h4><lang>View My GitHub Projects</lang></h4>
+          <p style="text-align: center">
+            <lang>You can also search on other user profiles </lang>
+          </p>
+          <input type="text" id="gh-username" value="rafalq" />
+          <div id="gh-user-data"></div>
+          <div id="gh-repo-data"></div>
         </div>
-      </div>
+      </section>
+      <!-- CONTACT SECTION -->
+      <section>
+        <h2 id="contact" class="section-heading">
+          <lang>Contact</lang>
+        </h2>
+        <div class="contact-wrapper-bg">
+          <div class="contact-wrapper">
+            <h3 style="text-align: center">
+              <lang>Got a project in mind?</lang>
+            </h3>
+            <h4><lang>Let's work together!</lang></h4>
+            <form
+              id="contact-form"
+              action="https://formsubmit.co/kruszewskirafael@gmail.com"
+              method="POST"
+            >
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                required
+              />
+              <textarea
+                rows="8"
+                name="message"
+                id="message"
+                placeholder="Project description"
+                required
+              >
+              </textarea>
+              <input
+                type="hidden"
+                name="_autoresponse"
+                value="Thank you for your email. I will contact you soon."
+              />
+              <input type="hidden" name="_template" value="box" />
+              <button type="submit">
+                <lang>Send Project Request</lang>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
       <!-- end CONTACT SECTION -->
     </main>
   </body>

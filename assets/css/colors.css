@@ -1,0 +1,17 @@
+:root {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+  --transition-speed: 600ms;
+  --color-orange-light: #ffd07e;
+  --color-orange-dark: #df9749;
+  --color-pink-light: #ff7eee;
+  --color-pink-dark: #df49a6;
+  --color-blue-light: #7e82ff;
+  --color-blue-dark: #4953df;
+  --color-green-light: #7effc3;
+  --color-green-dark: #49df83;
+}

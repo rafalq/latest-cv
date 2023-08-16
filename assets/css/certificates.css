@@ -1,44 +1,41 @@
 .certificates-wrapper {
-  padding: 2rem;
-  padding-right: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  justify-content: center;
   gap: 3rem;
   min-height: 200px;
   position: relative;
+  padding: 2rem;
 }
 .cert-link-wrapper {
-  position: absolute;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
-.cert-link {
-  text-decoration: none;
-}
-.cert-link:link {
-  text-decoration: none;
-}
-.cert-link:hover {
-  text-decoration: none;
-}
-.cert-link:active {
-  text-decoration: none;
-}
+.cert-link,
+.cert-link:link,
+.cert-link:hover,
+.cert-link:active,
 .cert-link:visited {
   text-decoration: none;
 }
+
 img.cert-icon {
-  margin-bottom: 6px;
   position: relative;
+  right: -25px;
+
   height: 80px;
   width: auto;
   opacity: 0.4;
 }
 img.cert-icon-logo {
-  margin-bottom: 6px;
+  max-height: 50px;
+  max-width: 50px;
   position: relative;
-  top: -20px;
-  right: 67px;
+  top: 10px;
+  right: 40px;
 }
 .tooltip .tooltip-text-cert {
   top: 85px;

@@ -1,6 +1,8 @@
 .skills-wrapper {
-  background-color: var(--bg-secondary);
-  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .skills-icon {
   text-align: center;
@@ -13,13 +15,22 @@
 .skills-icon:hover {
   color: var(--color-orange-dark);
 }
+.frontend-wrapper,
+.backend-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.frontend-wrapper {
+  align-items: flex-end;
+}
+.backend-wrapper {
+  align-items: flex-start;
+}
 .frontend-skills-wrapper,
 .backend-skills-wrapper {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-}
-.frontend-heading,
-.backend-heading {
-  margin-bottom: 2.5rem;
+  padding: 1.5rem;
 }

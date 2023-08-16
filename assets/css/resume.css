@@ -1,3 +1,7 @@
+.resume-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
 .timeline-item {
   padding: 4em 2em 0em 2em;
   position: relative;
@@ -66,6 +70,13 @@
   display: flex;
   justify-content: flex-end;
   width: auto;
+}
+.education-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.education-heading {
+  align-self: flex-end;
 }
 .education-content {
   position: relative;

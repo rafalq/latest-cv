@@ -3,13 +3,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 2rem;
-}
-.contact-wrapper h3 {
-  margin-top: 1.5rem;
-}
-.contact-wrapper h4 {
-  margin: 0;
 }
 #contact-form {
   display: flex;
