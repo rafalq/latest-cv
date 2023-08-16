@@ -1,10 +1,11 @@
 .certificates-wrapper {
-  padding: 2rem 0;
+  padding: 2rem;
+  padding-right: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 4rem;
+  gap: 3rem;
   min-height: 200px;
   position: relative;
 }
