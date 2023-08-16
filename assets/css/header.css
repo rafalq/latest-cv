@@ -2,3 +2,10 @@
   display: flex;
   justify-content: space-between;
 }
+
+.tooltip-switch {
+  position: fixed;
+  top: 20px;
+  right: 25px;
+  z-index: 1000;
+}

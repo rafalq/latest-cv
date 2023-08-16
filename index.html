@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rafal Kruszewski CV</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -280,10 +282,7 @@
 
     <main>
       <section class="main-header">
-        <div
-          class="tooltip"
-          style="position: fixed; top: 20px; right: 25px; z-index: 1000"
-        >
+        <div class="tooltip tooltip-switch tooltip-switch-sm">
           <label class="switch">
             <p class="language default-lang">PL</p>
             <div>
@@ -292,7 +291,9 @@
             </div>
             <p class="language second-lang">EN</p>
           </label>
-          <span class="tooltiptext" style="position: relative; top: 50px"
+          <span
+            class="tooltiptext tooltip-text-switch-sm"
+            style="position: relative; top: 50px"
             ><lang>Przetłumacz na polski</lang></span
           >
         </div>
@@ -618,10 +619,31 @@
       <!-- end SKILLS SECTION-->
 
       <!-- CATES SECTION -->
-      <section class="certificates-section">
-        <h2 id="certificates" class="section-heading">
+      <section id="certificates" class="certificates-section">
+        <h2 class="section-heading">
           <lang>Certificates</lang>
         </h2>
+        <h4 class="section-heading">
+          <span
+            ><lang>Click on the selected certificate to download</lang></span
+          >
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 632 512"
+            class="cert-download-icon"
+          >
+            <g class="fa-group">
+              <path
+                class="fa-secondary"
+                fill="currentColor"
+                d="M480 352h-133.5l-45.25 45.25C289.2 409.3 273.1 416 256 416s-33.16-6.656-45.25-18.75L165.5 352H32c-17.67 0-32 14.33-32 32v96c0 17.67 14.33 32 32 32h448c17.67 0 32-14.33 32-32v-96C512 366.3 497.7 352 480 352zM432 456c-13.2 0-24-10.8-24-24c0-13.2 10.8-24 24-24s24 10.8 24 24C456 445.2 445.2 456 432 456zM233.4 374.6C239.6 380.9 247.8 384 256 384s16.38-3.125 22.62-9.375l128-128c12.49-12.5 12.49-32.75 0-45.25c-12.5-12.5-32.76-12.5-45.25 0L288 274.8V32c0-17.67-14.33-32-32-32C238.3 0 224 14.33 224 32v242.8L150.6 201.4c-12.49-12.5-32.75-12.5-45.25 0c-12.49 12.5-12.49 32.75 0 45.25L233.4 374.6z"
+              />
+            </g>
+          </svg>
+        </h4>
         <div class="certificates-wrapper">
           <a
             href="assets/certs/certificate-of-completion-for-modern-react-and-redux.pdf"
@@ -637,7 +659,7 @@
                   class="cert-icon-logo"
                 />
               </div>
-              <span class="tooltiptext tooltip-text-cert"
+              <span class="tooltiptext tooltip-text-cert tooltip-text-cert-sm"
                 ><lang>Modern React and Redux</lang></span
               >
             </div>
@@ -656,7 +678,7 @@
                   class="cert-icon-logo"
                 />
               </div>
-              <span class="tooltiptext tooltip-text-cert"
+              <span class="tooltiptext tooltip-text-cert tooltip-text-cert-sm"
                 ><lang>Golang for Beginners</lang></span
               >
             </div>
@@ -675,7 +697,7 @@
                   class="cert-icon-logo"
                 />
               </div>
-              <span class="tooltiptext tooltip-text-cert"
+              <span class="tooltiptext tooltip-text-cert tooltip-text-cert-sm"
                 ><lang>Golang The Practical Guide</lang></span
               >
             </div>
@@ -694,8 +716,8 @@
                   class="cert-icon-logo"
                 />
               </div>
-              <span class="tooltiptext tooltip-text-cert"
-                ><lang>Ultimate MySql Bootcamp</lang></span
+              <span class="tooltiptext tooltip-text-cert tooltip-text-cert-sm"
+                ><lang>MySql Bootcamp</lang></span
               >
             </div>
           </a>
@@ -713,7 +735,7 @@
                   class="cert-icon-logo"
                 />
               </div>
-              <span class="tooltiptext tooltip-text-cert"
+              <span class="tooltiptext tooltip-text-cert tooltip-text-cert-sm"
                 ><lang>Vue Forge</lang></span
               >
             </div>
@@ -732,7 +754,7 @@
                   class="cert-icon-logo"
                 />
               </div>
-              <span class="tooltiptext tooltip-text-cert"
+              <span class="tooltiptext tooltip-text-cert tooltip-text-cert-sm"
                 ><lang>Java Foundations</lang></span
               >
             </div>
@@ -751,7 +773,7 @@
                   class="cert-icon-logo"
                 />
               </div>
-              <span class="tooltiptext tooltip-text-cert"
+              <span class="tooltiptext tooltip-text-cert tooltip-text-cert-sm"
                 ><lang>Software Developer Diploma</lang></span
               >
             </div>

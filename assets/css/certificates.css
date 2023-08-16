@@ -21,7 +21,11 @@
 .cert-link:visited {
   text-decoration: none;
 }
-
+.cert-download-icon {
+  margin-left: 0.2rem;
+  height: 1.2rem;
+  width: 1.2rem;
+}
 img.cert-icon {
   position: relative;
   right: -25px;
@@ -38,6 +42,6 @@ img.cert-icon-logo {
   right: 40px;
 }
 .tooltip .tooltip-text-cert {
-  width: 95px;
+  width: 100px;
   z-index: 10;
 }

@@ -22,7 +22,10 @@ const data = [
     pl: 'Współczesny React i Redux',
     en: 'Modern React and Redux',
   },
-
+  {
+    pl: 'Kliknij wybrany certyfikat, żeby pobrać',
+    en: 'Click on the selected certificate to download',
+  },
   {
     pl: 'Certyfikaty',
     en: 'Certificates',

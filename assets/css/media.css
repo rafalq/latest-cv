@@ -3,6 +3,10 @@
 */
 
 @media only screen and (max-width: 600px) {
+  /* section */
+  .section-heading {
+    margin: 0 !important;
+  }
   /* navbar */
   .navbar {
     bottom: 0;
@@ -21,7 +25,16 @@
     justify-content: center;
     margin: 0;
   }
-
+  /* switch */
+  .tooltip-switch.tooltip-switch-sm {
+    top: 30px;
+    right: 40px;
+  }
+  .tooltip-text-switch-sm {
+    display: none;
+    top: 10px;
+    right: 10px;
+  }
   /* about-me */
   .three-reasons-wrapper {
     padding-bottom: 1.5rem;
@@ -51,7 +64,12 @@
     justify-content: center;
     align-items: center;
   }
-
+  /*certificate*/
+  .tooltip-text-cert-sm {
+    visibility: visible !important;
+    border: 0 !important;
+    margin-top: 0.5rem;
+  }
   /* contact */
   .contact-wrapper {
     padding-bottom: 3rem;
