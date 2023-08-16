@@ -24,27 +24,26 @@
       src="https://kit.fontawesome.com/da5655adfb.js"
       crossorigin="anonymous"
     ></script>
+    <script defer src="assets/js/data.js"></script>
     <script defer src="assets/js/theme.js"></script>
     <script defer src="assets/js/github.js"></script>
     <script defer src="assets/js/translate.js"></script>
   </head>
   <body>
     <div
-      class="tooltip"
+      class="tooltip switch-lang"
       style="position: fixed; top: 30px; right: 60px; z-index: 1000"
     >
       <label class="switch">
-        <p class="language default-lang">ENG</p>
+        <p class="language default-lang">PL</p>
         <div>
           <input data-lang="eng" type="checkbox" class="translate-button" />
           <span class="slider round"></span>
         </div>
-        <p class="language second-lang">PL</p>
+        <p class="language second-lang">EN</p>
       </label>
-      <span
-        class="__lang__tooltip-text tooltiptext"
-        style="position: relative; top: 50px"
-        >Translate into Polish</span
+      <span class="tooltiptext" style="position: relative; top: 50px"
+        ><lang>Przetłumacz na polski</lang></span
       >
     </div>
     <nav class="navbar" ss-container>
@@ -100,7 +99,7 @@
                 />
               </g>
             </svg>
-            <span class="__lang__link-text-about-me link-text">About Me</span>
+            <span class="link-text"><lang>About Me</lang></span>
           </a>
         </li>
         <li class="nav-item">
@@ -120,7 +119,7 @@
                 />
               </g>
             </svg>
-            <span class="__lang__link-text-resume link-text">Resume</span>
+            <span class="link-text"><lang>Resume</lang></span>
           </a>
         </li>
         <li class="nav-item">
@@ -140,7 +139,7 @@
                 />
               </g>
             </svg>
-            <span class="__lang__link-text-skills link-text">Skills</span>
+            <span class="link-text"><lang>Skills</lang></span>
           </a>
         </li>
         <li class="nav-item">
@@ -156,9 +155,7 @@
                 d="m75.706 51.666 8.431-8.671c3.62-3.62 5.859-8.62 5.862-14.141 0-7.36-2.988-14.026-7.813-18.854l-9.319 9.56-.11-.133c-2.412-2.412-5.745-3.906-9.427-3.906s-7.015 1.494-9.427 3.906l-39.996 41.145c-2.414 2.412-3.906 5.745-3.906 9.427 0 11.042 8.953 20 20 20 5.521 0 10.521-2.24 14.14-5.859l18.606-19.141h23.919l-3.333-6.67 6.666-6.663zm-32.373 18.333c0 3.682-1.493 7.015-3.906 9.427s-5.747 3.906-9.427 3.906c-7.365 0-13.333-5.973-13.333-13.333 0-1.842.745-3.509 1.953-4.713 1.208-1.205 2.874-1.953 4.713-1.953 1.841 0 3.507.748 4.713 1.953 1.207 1.207 1.954 2.874 1.954 4.713h-6.667v6.667h6.667c3.682 0 6.667-2.985 6.667-6.667 0-3.678-1.494-7.012-3.906-9.427-1.676-1.677-3.815-2.868-6.188-3.464l32.07-32.987c-.01.007-.017.014-.026.02l.068-.064-.042.045c1.207-1.191 2.861-1.934 4.688-1.934 1.839 0 3.506.749 4.713 1.953.063.059.104.137.163.199l-30.729 31.518c3.619 3.621 5.859 8.621 5.855 14.141z"
               />
             </svg>
-            <span class="__lang__link-text-certificates link-text"
-              >Certificates</span
-            >
+            <span class="link-text"><lang>Certificates</lang></span>
           </a>
         </li>
         <li class="nav-item">
@@ -178,7 +175,7 @@
                 />
               </g>
             </svg>
-            <span class="__lang__link-text-github link-text">Github</span>
+            <span class="link-text"><lang>Github</lang></span>
           </a>
         </li>
         <li class="nav-item">
@@ -198,7 +195,7 @@
                 />
               </g>
             </svg>
-            <span class="__lang__link-text-contact link-text">Contact</span>
+            <span class="link-text"><lang>Contact</lang></span>
           </a>
         </li>
         <li class="nav-item">
@@ -223,9 +220,7 @@
                 />
               </g>
             </svg>
-            <span class="__lang__link-text-download-cv link-text"
-              >Download CV</span
-            >
+            <span class="link-text"><lang>Download CV</lang></span>
           </a>
         </li>
         <li class="nav-item" id="themeButton">
@@ -302,7 +297,7 @@
                 ></path>
               </g>
             </svg>
-            <span class="__lang__link-text-themify link-text">Themify</span>
+            <span class="link-text"><lang>Themify</lang></span>
           </a>
         </li>
       </ul>
@@ -311,16 +306,13 @@
     <main>
       <div class="main-header">
         <div>
-          <h2 class="my-names">Rafal Kruszewski</h2>
-          <h1 class="__lang__my-title my-title">Full Stack Web Developer</h1>
+          <h2 class="my-names"><lang>Rafal Kruszewski</lang></h2>
+          <h1 class="my-title"><lang>Full Stack Web Developer</lang></h1>
         </div>
       </div>
       <!-- ABOUT ME -->
-      <h2
-        id="about-me"
-        class="__lang__section-heading-about-me section-heading"
-      >
-        About Me
+      <h2 id="about-me" class="section-heading">
+        <lang>About Me</lang>
       </h2>
       <div class="about-me-wrapper-bg">
         <div class="about-me-wrapper">
@@ -330,63 +322,75 @@
                 class="three-reasons-icon fa fa-question"
                 aria-hidden="true"
               ></i>
-              <span class="__lang__what-do-i-do">What do I do?</span>
+              <span><lang>What do I do?</lang></span>
             </h4>
-            <p class="__lang__what-do-i-do-content">
-              I'm a Full Stack Developer with diverse interests and great
-              enthusiasm that I bring to every project.
+            <p>
+              <lang
+                >I'm a Full Stack Developer with diverse interests and great
+                enthusiasm that I bring to every project.</lang
+              >
             </p>
             <h4 class="three-reasons-heading">
               <i class="three-reasons-icon fa fa-thumbs-up"></i>
-              <span class="__lang__how-do-i-do-it">How do I do it?</span>
+              <span><lang>How do I do it?</lang></span>
             </h4>
-            <p class="__lang__how-do-i-do-it-content">
-              I follow form as well as function. I know that the aesthetics of
-              effective design combined with application speed, security and
-              reliability combine to create a great user experience.
+            <p>
+              <lang>
+                I follow form as well as function. I know that the aesthetics of
+                effective design combined with application speed, security and
+                reliability combine to create a great user experience.
+              </lang>
             </p>
             <h4 class="three-reasons-heading">
               <i class="three-reasons-icon fa fa-bolt" aria-hidden="true"></i>
-              <span class="__lang__why-hire-me">Why hire me?</span>
+              <span><lang>Why hire me?</lang></span>
             </h4>
-            <p class="__lang__why-hire-me-content">
-              I work effectively in getting things. I'm a keen team player who
-              thrives in bright and enthusiastic teams and I'm also a self
-              starter when working solo.
+            <p>
+              <lang
+                >I work effectively in getting things. I'm a keen team player
+                who thrives in bright and enthusiastic teams and I'm also a self
+                starter when working solo.</lang
+              >
             </p>
           </section>
           <section class="interests-wrapper">
-            <h4 class="__lang__interests-title interests-title">Interests</h4>
+            <h4 class="interests-title"><lang>Interests</lang></h4>
             <h5 class="interests-heading">
               <i class="interests-icon fas fa-book-open" aria-hidden="true"></i>
-              <span class="__lang__literature">Literature</span>
+              <span><lang>Literature</lang></span>
             </h5>
-            <p class="__lang_literature-content">
-              Whenever I have some free time, I like to read philosophy. I used
-              to like fantasy and sf books. All in all, I still do.
+            <p>
+              <lang
+                >Whenever I have some free time, I like to read philosophy. I
+                used to like fantasy and sf books. All in all, I still do.</lang
+              >
             </p>
             <h5 class="interests-heading">
               <i class="interests-icon far fa-keyboard" aria-hidden="true"></i>
-              <span class="__lang__coding">Coding</span>
+              <span><lang>Coding</lang></span>
             </h5>
-            <p class="__lang__coding-content">
-              80% of my time is spent coding or learning new things about
-              programming.
+            <p>
+              <lang
+                >80% of my time is spent coding or learning new things about
+                programming.</lang
+              >
             </p>
             <h5 class="interests-heading">
               <i class="interests-icon fas fa-music" aria-hidden="true"></i>
-              <span class="__lang__music">Music</span>
+              <span><lang>Music</lang></span>
             </h5>
-            <p class="__lang__music-content">
-              If I had been born under different circumstances, I would have
-              been professional musician.
+            <p>
+              <lang
+                >If I had been born under different circumstances, I would have
+                been professional musician.</lang
+              >
             </p>
             <h5 class="interests-heading uppercase">
               <i class="interests-icon fas fa-dumbbell" aria-hidden="true"></i>
-              <span class="__lang__crossfit">Crossfit</span>
+              <span><lang>Crossfit</lang></span>
             </h5>
-            <p class="__lang__crossfit-content">
-              From martial arts to kettlebells.
+            <p>
+              <lang>From martial arts to kettlebells.</lang>
             </p>
           </section>
         </div>
@@ -394,13 +398,13 @@
       <!-- end ABOUT ME -->
 
       <!-- RESUME	-->
-      <h2 id="resume" class="__lang__section-heading-resume section-heading">
-        Resume
+      <h2 id="resume" class="section-heading">
+        <lang>Resume</lang>
       </h2>
       <div class="resume-wrapper">
         <section class="education-wrapper">
           <h3 class="education-heading">
-            <span class="__lang__education">Education</span>
+            <span><lang>Education</lang></span>
             <i
               class="heading-icon fas fa-graduation-cap"
               aria-hidden="true"
@@ -410,25 +414,27 @@
             class="timeline-item timeline-item__education"
             data-dates="10/1999 - 06/2001"
           >
-            <h4 class="__lang__political-science">Political Science</h4>
-            <p class="__lang__political-science-content">
-              Pawel Wlodkowic College, Poland
+            <h4><lang>Political Science</lang></h4>
+            <p style="text-align: right">
+              <lang>Pawel Wlodkowic College, Poland</lang>
             </p>
           </div>
           <div
             class="timeline-item timeline-item__education"
             data-dates="10/2002 - 06/2005"
           >
-            <h4 class="__lang__philosophy">Philosophy</h4>
-            <p class="__lang__philosophy-content">Poznan University, Poland</p>
+            <h4><lang>Philosophy</lang></h4>
+            <p style="text-align: right">
+              <lang>Poznan University, Poland</lang>
+            </p>
           </div>
           <div
             class="timeline-item timeline-item__education"
             data-dates="12/2018 - 03/2019"
           >
-            <h4 class="__lang__java-dev">Java Associate Developer SE 8</h4>
+            <h4><lang>Java Associate Developer SE 8</lang></h4>
             <p>
-              <span class="__lang__java-dev-content">ecollege, Ireland</span>
+              <span><lang>ecollege, Ireland</lang></span>
               <i
                 class="fas fa-award"
                 data-toggle="tooltip"
@@ -441,11 +447,9 @@
             class="timeline-item timeline-item__education"
             data-dates="02/2019 - 02/2020"
           >
-            <h4 class="__lang__fullstack-web-dev">Full Stack Web Developer</h4>
+            <h4><lang>Full Stack Web Developer</lang></h4>
             <p>
-              <span class="__lang__fullstack-web-dev-content"
-                >Code Institute, Ireland</span
-              >
+              <span><lang>Code Institute, Ireland</lang></span>
               <i
                 class="fas fa-award"
                 data-toggle="tooltip"
@@ -458,9 +462,9 @@
             class="timeline-item timeline-item__education"
             data-dates="02/2020 - Present"
           >
-            <h4 class="__lang__udemy">Frontend | Backend | Linux | Github</h4>
-            <p class="__lang__udemy-content">
-              Udemy, online
+            <h4><lang>Frontend | Backend | Linux | Github</lang></h4>
+            <p>
+              <lang>Udemy, online</lang>
               <i
                 class="fas fa-award"
                 data-toggle="tooltip"
@@ -473,31 +477,31 @@
         <section class="work-wrapper">
           <h3 class="work-heading">
             <i class="heading-icon fas fa-briefcase"></i>
-            <span class="__lang__work-history">Work History</span>
+            <span><lang>Work History</lang></span>
           </h3>
           <div
             class="timeline-item timeline-item__work"
             data-dates="1995 - 1999"
           >
-            <h4 class="__lang__radio-boss">Radio Boss, Poland</h4>
-            <p class="__lang__radio-boss-content">Radio Journalist Assistant</p>
+            <h4><lang>Radio Boss, Poland</lang></h4>
+            <p><lang>Radio Journalist Assistant</lang></p>
           </div>
           <div
             class="timeline-item timeline-item__work"
             data-dates="08/2007 - 10/2017"
           >
-            <h4 class="__lang__medtronic">
-              Medtronic CardioVascular, Galway, Ireland
+            <h4>
+              <lang>Medtronic CardioVascular, Galway, Ireland</lang>
             </h4>
-            <p class="__lang__medtronic-content">General Operative</p>
+            <p><lang>General Operative</lang></p>
           </div>
         </section>
       </div>
       <!-- end RESUME -->
 
       <!-- SKILLS	-->
-      <h2 id="skills" class="__lang__section-heading-skills section-heading">
-        Skills
+      <h2 id="skills" class="section-heading">
+        <lang>Skills</lang>
       </h2>
       <div class="skills-wrapper">
         <section class="frontend-wrapper">
@@ -618,11 +622,8 @@
       </div>
       <!-- end SKILLS SECTION-->
       <!-- CERTIFICATES SECTION -->
-      <h2
-        id="certificates"
-        class="__lang__section-heading-certificates section-heading"
-      >
-        Certificates
+      <h2 id="certificates" class="section-heading">
+        <lang>Certificates</lang>
       </h2>
       <div class="certificates-wrapper">
         <a
@@ -640,8 +641,8 @@
                 style="left: -65px; top: -20px"
               />
             </div>
-            <span class="__lang__react-redux tooltiptext tooltip-text-cert"
-              >Modern React and Redux</span
+            <span class="tooltiptext tooltip-text-cert"
+              ><lang>Modern React and Redux</lang></span
             >
           </div>
         </a>
@@ -660,8 +661,8 @@
                 style="top: -37px; height: 25px"
               />
             </div>
-            <span class="__lang__go tooltiptext tooltip-text-cert"
-              >Golang for Beginners</span
+            <span class="tooltiptext tooltip-text-cert"
+              ><lang>Golang for Beginners</lang></span
             >
           </div>
         </a>
@@ -682,8 +683,8 @@
                 style="top: -37px; height: 25px"
               />
             </div>
-            <span class="__lang__go-practical tooltiptext tooltip-text-cert"
-              >Golang The Practical Guide</span
+            <span class="tooltiptext tooltip-text-cert"
+              ><lang>Golang The Practical Guide</lang></span
             >
           </div>
         </a>
@@ -704,8 +705,8 @@
                 style="top: -30px"
               />
             </div>
-            <span class="__lang__mysql-bootcamp tooltiptext tooltip-text-cert"
-              >Ultimate MySql Bootcamp</span
+            <span class="tooltiptext tooltip-text-cert"
+              ><lang>Ultimate MySql Bootcamp</lang></span
             >
           </div>
         </a>
@@ -725,8 +726,8 @@
                 class="skills-icon frontend-icon cert-icon-logo"
               />
             </div>
-            <span class="__lang__vue-forge tooltiptext tooltip-text-cert"
-              >Vue Forge</span
+            <span class="tooltiptext tooltip-text-cert"
+              ><lang>Vue Forge</lang></span
             >
           </div>
         </a>
@@ -745,8 +746,8 @@
                 style="height: 60px; left: -73px"
               />
             </div>
-            <span class="__lang__java tooltiptext tooltip-text-cert"
-              >Java Foundations</span
+            <span class="tooltiptext tooltip-text-cert"
+              ><lang>Java Foundations</lang></span
             >
           </div>
         </a>
@@ -765,19 +766,19 @@
                 style="height: 45px"
               />
             </div>
-            <span class="__lang__software-dev tooltiptext tooltip-text-cert"
-              >Software Developer Diploma</span
+            <span class="tooltiptext tooltip-text-cert"
+              ><lang>Software Developer Diploma</lang></span
             >
           </div>
         </a>
       </div>
       <!-- end CERTIFICATES SECTION -->
       <!-- GITHUB SECTION	 -->
-      <h2 id="github" class="__lang__my-github section-heading">My Github</h2>
+      <h2 id="github" class="section-heading"><lang>My Github</lang></h2>
       <div class="github-wrapper">
-        <h4 class="__lang__my-github-content-1">View My GitHub Projects</h4>
-        <p class="__lang__my-github-content-2">
-          You can also search on other user profiles
+        <h4><lang>View My GitHub Projects</lang></h4>
+        <p style="text-align: center">
+          <lang>You can also search on other user profiles </lang>
         </p>
         <input type="text" id="gh-username" value="rafalq" />
         <div id="gh-user-data"></div>
@@ -785,13 +786,15 @@
       </div>
 
       <!-- CONTACT SECTION -->
-      <h2 id="contact" class="__lang__section-heading-contact section-heading">
-        Contact
+      <h2 id="contact" class="section-heading">
+        <lang>Contact</lang>
       </h2>
       <div class="contact-wrapper-bg">
         <div class="contact-wrapper">
-          <h3 class="__lang__project-in-mind">Got a project in mind?</h3>
-          <h4 class="__lang__project-in-mind-content">Let's work together!</h4>
+          <h3 style="text-align: center">
+            <lang>Got a project in mind?</lang>
+          </h3>
+          <h4><lang>Let's work together!</lang></h4>
           <form
             id="contact-form"
             action="https://formsubmit.co/kruszewskirafael@gmail.com"
@@ -824,8 +827,8 @@
               value="Thank you for your email. I will contact you soon."
             />
             <input type="hidden" name="_template" value="box" />
-            <button class="__lang__send-req" type="submit">
-              Send Project Request
+            <button type="submit">
+              <lang>Send Project Request</lang>
             </button>
           </form>
         </div>

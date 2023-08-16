@@ -54,12 +54,9 @@
   }
   .frontend-skills-wrapper,
   .backend-skills-wrapper {
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-  }
-  p.__lang__political-science-content,
-  p.__lang__philosophy-content {
-    text-align: right;
   }
 
   /* CERTIFICATES */
