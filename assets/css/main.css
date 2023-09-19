@@ -19,11 +19,12 @@ body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+}
+body {
   color: var(--text-primary);
   background-color: var(--bg-primary);
   padding-bottom: 3rem;
 }
-
 /* ----- SECTION ----- */
 section {
   display: flex;
