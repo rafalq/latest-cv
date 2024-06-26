@@ -6,7 +6,7 @@ function getUserInfo(user) {
   return `
         <div class="gh-avatar">
             <a href="${user.html_url} target="_blank">
-                <img src="${user.avatar_url}" width="80" alt="${user.login}">
+              <img src="${user.avatar_url}" width="80" alt="${user.login}">
             </a>
         </div>
         <p>Followers: ${user.followers} | Following: ${user.following}
@@ -18,14 +18,14 @@ function getReposInfo(repos) {
   if (repos.length > 0) {
     const listItem = repos.map(function (repo) {
       return `<li>
-						<a href="${repo.html_url}" target="_blank
-						">${repo.name}</a>
-					</li>`;
-    });
+		<a href="${repo.html_url}" target="_blank">
+  		  ${repo.name}
+      		</a>
+	      </li>`;});
 
     return `<div class="repo-list">
-					<ul>${listItem.join('\n')}</ul>
-				</div>`;
+	      <ul>${listItem.join('\n')}</ul>
+	    </div>`;
   }
   return `<div class="repo-list"></div>`;
 }
