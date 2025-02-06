@@ -6,8 +6,8 @@ const switchTooltiptext = document.querySelector('.__lang__tooltip-text');
     SET / TOGGLE LANGUAGES
 */
 
-const DEFAULT_LANG = 'pl';
-const SECOND_LANG = 'en';
+const DEFAULT_LANG = 'en';
+const SECOND_LANG = 'pl';
 
 const cvLink = document.getElementById('nav-link-cv');
 const defaultLangCV = `assets/cv/cv-${DEFAULT_LANG}.pdf`;
