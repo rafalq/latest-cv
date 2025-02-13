@@ -47,7 +47,7 @@ function changeLang(localStorageKey, defaultLang, secondLang) {
   if (lang === secondLang) {
     console.log('secondLang', secondLang)  
     cvLinks.forEach(link => {
-        link.setAttribute('href', secondLangCV)
+        link.setAttribute('href', defaultLangCV)
         console.log('second lang link', link)
     });
 
@@ -65,7 +65,7 @@ function changeLang(localStorageKey, defaultLang, secondLang) {
 
     console.log('defaultLang', defaultLang)
     cvLinks.forEach(link => {
-        link.setAttribute('href', defaultLangCV)
+        link.setAttribute('href', secondLangCV)
         console.log('default lang link', link)
     });
     
