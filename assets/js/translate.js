@@ -9,7 +9,7 @@ const switchTooltiptext = document.querySelector('.__lang__tooltip-text');
 const DEFAULT_LANG = 'en';
 const SECOND_LANG = 'pl';
 
-const cvLinks = document.querySelector('.nav-link-cv');
+const cvLinks = document.querySelectorAll('a.nav-link-cv');
 const defaultLangCV = `assets/cv/cv-${DEFAULT_LANG}.pdf`;
 const secondLangCV = `assets/cv/cv-${SECOND_LANG}.pdf`;
 
