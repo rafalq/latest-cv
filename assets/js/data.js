@@ -89,8 +89,8 @@ const data = [
     en: 'Code Institute, Ireland',
   },
   {
-    pl: 'Programista Full Stack',
-    en: 'Full Stack Web Developer',
+    pl: 'Programista Komputerowy',
+    en: 'Software Developer',
   },
   {
     pl: 'ecollege, Irlandia',
@@ -178,8 +178,8 @@ const data = [
     en: 'How do I do it?',
   },
   {
-    pl: 'Jestem Programistą Full Stack z różnorodnymi zainteresowaniami i wielkim entuzjazmem, który wnoszę do każdego projektu.',
-    en: 'I am a Full Stack Web Developer with diverse interests and great enthusiasm that I bring to every project.',
+    pl: 'Jestem programistą komputerowym z różnorodnymi zainteresowaniami i wielkim entuzjazmem, który wnoszę do każdego projektu.',
+    en: 'I am a Software Developer with diverse interests and great enthusiasm that I bring to every project.',
   },
   {
     pl: 'Czym się zajmuję?',
@@ -191,8 +191,8 @@ const data = [
   },
   // header
   {
-    pl: 'Programista Full Stack',
-    en: 'Full Stack Web Developer',
+    pl: 'Programista Komputerowy',
+    en: 'Software Developer',
   },
   {
     pl: 'Rafał Kruszewski',
