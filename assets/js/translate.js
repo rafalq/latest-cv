@@ -9,7 +9,7 @@ const switchTooltiptext = document.querySelector('.__lang__tooltip-text');
 const DEFAULT_LANG = 'en';
 const SECOND_LANG = 'pl';
 
-const cvLink = document.getElementById('nav-link-cv');
+const cvLinks = document.querySelector('.nav-link-cv');
 const defaultLangCV = `assets/cv/cv-${DEFAULT_LANG}.pdf`;
 const secondLangCV = `assets/cv/cv-${SECOND_LANG}.pdf`;
 
@@ -44,7 +44,8 @@ function changeLang(localStorageKey, defaultLang, secondLang) {
   let lang = localStorage.getItem(localStorageKey);
 
   if (lang === secondLang) {
-    cvLink.setAttribute('href', secondLangCV);
+      
+    cvLinks.forEach(link => link.setAttribute('href', secondLangCV));
 
     for (let el of langTagColl) {
       for (let obj of data) {
@@ -57,7 +58,9 @@ function changeLang(localStorageKey, defaultLang, secondLang) {
       }
     }
   } else if (lang === defaultLang) {
-    cvLink.setAttribute('href', defaultLangCV);
+      
+    cvLinks.forEach(link => link.setAttribute('href', defaultLangCV));
+    
     for (let el of langTagColl) {
       for (let obj of data) {
         if (
