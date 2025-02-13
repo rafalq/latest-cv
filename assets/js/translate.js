@@ -10,6 +10,7 @@ const DEFAULT_LANG = 'en';
 const SECOND_LANG = 'pl';
 
 const cvLinks = document.querySelectorAll('a.nav-link-cv');
+console.log('cvLinks', cvLinks)
 const defaultLangCV = `assets/cv/cv-${DEFAULT_LANG}.pdf`;
 const secondLangCV = `assets/cv/cv-${SECOND_LANG}.pdf`;
 
