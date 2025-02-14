@@ -42,6 +42,10 @@
   display: none;
   margin-left: 1rem;
 }
+.link-text-mobile {
+  text-align: center;
+  font-size: 0.5rem;
+}
 .fa-primary {
   color: var(--color-orange-light);
 }
