@@ -20,10 +20,12 @@
   .logo {
     display: none;
   }
-
   .nav-link {
     justify-content: center;
     margin: 0;
+  }
+  .link-text-mobile {
+    display: inline-block;
   }
   /* switch */
   .tooltip.tooltip-switch {
