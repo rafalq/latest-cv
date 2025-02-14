@@ -24,8 +24,12 @@
     justify-content: center;
     margin: 0;
   }
-  .link-text-mobile {
+  span.link-text-mobile {
     display: inline-block;
+    position: absolute;
+    bottom: 0.4rem;
+    font-size: 0.4rem;
+    
   }
   /* switch */
   .tooltip.tooltip-switch {
