@@ -44,8 +44,6 @@
 }
 .link-text-mobile {
   display: none;
-  text-align: center;
-  font-size: 0.5rem;
 }
 .fa-primary {
   color: var(--color-orange-light);
