@@ -43,6 +43,7 @@
   margin-left: 1rem;
 }
 .link-text-mobile {
+  display: none;
   text-align: center;
   font-size: 0.5rem;
 }
